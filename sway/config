@@ -85,8 +85,8 @@ input "4152:4964:SteelSeries_Kana_Gaming_Mouse" accel_profile flat
     bindsym XF86MonBrightnessUp exec light -A 10
     bindsym XF86MonBrightnessDown exec light -U 10
     # volume
-    bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-    bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+    bindsym XF86AudioRaiseVolume exec pamixer -i 5
+    bindsym XF86AudioLowerVolume exec pamixer -d 5
     bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 #
 # Moving around:
