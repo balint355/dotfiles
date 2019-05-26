@@ -1,17 +1,36 @@
 #!/bin/bash
 
-# directory names of configured apps
-dirs=(kitty sway waybar)
+# config directories of programs in config dir
+config_dirs=(kitty sway waybar)
+
+# filenames of configs outside the config dir, in home
+files=(zprofile zshrc)
 
 # remove configs from config directory
-for i in ${dirs[@]}
+for i in ${config_dirs[@]}
 do
-    dir="$HOME/.config/$i"
+    dir=$HOME/.config/$i
     if [[ -e $dir ]]
     then
-        rm -r "$dir"
+        rm -r $dir
     fi
 done
 
 # symlink configs to config directory
-ln -rs ${dirs[@]} $HOME/.config
+ln -rs ${config_dirs[@]} $HOME/.config
+
+# remove configs from home directory
+for i in ${files[@]}
+do
+    file=$HOME/.$i
+    if [[ -e $file ]]
+    then
+        rm $file
+    fi
+done
+
+# symlink configs to home directory
+for i in ${files[@]}
+do
+    ln -rs $i $HOME/.$i
+done
