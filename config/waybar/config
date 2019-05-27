@@ -8,8 +8,8 @@
   "network": {
     "format": "{ifname}",
     "format-wifi": " {essid} ({signalStrength}%)   {bandwidthDownBits}   {bandwidthUpBits}",
-    "format-ethernet": " {ifname}   {bandwidthDownBits}   {bandwidthUpBits}",
-    "format-disconnected": " ",
+    "format-ethernet": " {ifname}   {bandwidthDownBits}   {bandwidthUpBits}",
+    "format-disconnected": "",
     "interval": 5
   },
   "pulseaudio": {
