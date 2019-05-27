@@ -7,6 +7,7 @@ These are my personal dotfiles that I use on my desktop Linux systems.
 - kitty
 - sway
 - waybar
+- zsh
 
 ## Usage
 

@@ -1,36 +1,22 @@
 #!/bin/bash
 
-# config directories of programs in config dir
-config_dirs=(kitty sway waybar)
-
-# filenames of configs outside the config dir, in home
-files=(zprofile zshrc)
-
-# remove configs from config directory
-for i in ${config_dirs[@]}
-do
-    dir=$HOME/.config/$i
-    if [[ -e $dir ]]
-    then
-        rm -r $dir
+# setup configs in config directory
+config_dir="${XDG_CONFIG_HOME:-$HOME/.config}"
+for i in config/*; do
+    name=$(basename "$i")
+    dir="$config_dir/$name"
+    if [[ -e $dir ]]; then
+        rm -r "$dir"
     fi
+    ln -rs "$i" "$config_dir"
 done
 
-# symlink configs to config directory
-ln -rs ${config_dirs[@]} $HOME/.config
-
-# remove configs from home directory
-for i in ${files[@]}
-do
-    file=$HOME/.$i
-    if [[ -e $file ]]
-    then
-        rm $file
+# setup configs in home directory
+for i in home/*; do
+    name=$(basename "$i")
+    file="$HOME/.$name"
+    if [[ -e $file ]]; then
+        rm "$file"
     fi
-done
-
-# symlink configs to home directory
-for i in ${files[@]}
-do
-    ln -rs $i $HOME/.$i
+    ln -rs "$i" "$HOME/.$name"
 done
