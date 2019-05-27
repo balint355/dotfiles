@@ -214,5 +214,7 @@ bar {
 #
 # notification daemon
 exec mako --anchor top-center
+# torrent client
+exec transmission-gtk --minimized
 
 include /etc/sway/config.d/*
