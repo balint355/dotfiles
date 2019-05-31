@@ -8,6 +8,9 @@ These are my personal dotfiles that I use on my desktop Linux systems.
 - sway
 - waybar
 - zsh
+- mpv
+- zathura
+- ranger
 
 ## Usage
 
