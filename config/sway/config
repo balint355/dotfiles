@@ -209,10 +209,12 @@ exec mako --anchor top-center
 # torrent client
 exec transmission-gtk --minimized
 
-### Borders and gaps
+### Styling 
 
 default_border pixel 5
 smart_borders on
 
 gaps inner 10
 smart_gaps on
+
+font pango:Noto Sans 11
