@@ -13,7 +13,7 @@ set $right l
 set $term kitty
 
 # Your preferred application launcher
-set $menu 'rofi -show drun -modi drun'
+set $menu "rofi -show drun -modi drun -font 'Noto Sans 12' -show-icons true -scroll-method 1"
 
 ### Output configuration
 
