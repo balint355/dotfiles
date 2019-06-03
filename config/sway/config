@@ -18,7 +18,7 @@ set $menu "rofi -show drun -modi drun -font 'Noto Sans 12' -show-icons true -scr
 ### Output configuration
 
 # Wallpaper
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg alena-aenami-quiet-1px.jpg fill
 
 ### Idle configuration
  
