@@ -204,7 +204,7 @@ bar {
 ### Autostart
 
 # notification daemon
-exec mako --anchor top-center
+exec mako
 
 # torrent client
 exec transmission-gtk --minimized
