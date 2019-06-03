@@ -19,6 +19,7 @@ window#waybar {
 
 #workspaces button.focused {
   background: rgba(0, 0, 0, 0.25);
+  font-weight: bold;
 }
 
 #workspaces button.urgent {
@@ -33,6 +34,10 @@ window#waybar {
 #clock {
   padding: 3px 8px;
   color: white;
+}
+
+#window {
+  font-weight: bold;
 }
 
 @keyframes blink {
