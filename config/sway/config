@@ -209,6 +209,9 @@ exec mako --anchor top-center
 # torrent client
 exec transmission-gtk --minimized
 
+# automount usb
+exec udiskie
+
 ### Styling 
 
 default_border pixel 5
