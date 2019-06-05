@@ -9,6 +9,8 @@
 window#waybar {
   background: rgba(0, 0, 0, 0.6);
   color: white;
+  transition-property: background;
+  transition-duration: .5s;
 }
 
 #workspaces button {
