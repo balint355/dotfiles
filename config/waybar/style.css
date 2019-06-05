@@ -34,7 +34,8 @@ window#waybar {
 #pulseaudio,
 #battery,
 #clock {
-  padding: 3px 15px;
+  padding: 0 6px;
+  margin: 0 8px;
   color: white;
   font-weight: bold;
 }
