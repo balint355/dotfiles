@@ -1,14 +1,15 @@
 {
   "layer": "bottom",
-  "modules-left": ["sway/workspaces", "sway/window"],
+  "modules-left": ["sway/workspaces", "sway/mode"],
+  "modules-center": ["sway/window"],
   "modules-right": ["tray", "network", "pulseaudio", "battery", "clock"],
   "sway/window": {
     "max-length": 50
   },
   "network": {
     "format": "{ifname}",
-    "format-wifi": " {essid} ({signalStrength}%)   {bandwidthDownBits}   {bandwidthUpBits}",
-    "format-ethernet": " {ifname}   {bandwidthDownBits}   {bandwidthUpBits}",
+    "format-wifi": " {essid}",
+    "format-ethernet": " {ifname}",
     "format-disconnected": "",
     "interval": 5
   },
@@ -28,6 +29,6 @@
     }
   },
   "clock": {
-    "format": "{:%Y. %B %d. %A, %H:%M}"
+    "format": " {:%F, %R}"
   }
 }

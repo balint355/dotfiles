@@ -214,10 +214,27 @@ exec udiskie
 
 ### Styling 
 
-default_border pixel 5
+# fonts
+font pango:Noto Sans 11
+
+# borders
+default_border pixel 3
 smart_borders on
 
+# gaps
 gaps inner 10
 smart_gaps on
 
-font pango:Noto Sans 11
+# colors
+set $lblue #cceeff
+set $mblue #7799aa
+set $dblue #224455
+set $black #000000DD
+set $white #ffffff
+set $crimson #dc143c
+
+# class                      border      background      text      indicator      child_border
+  client.focused             $lblue      $black          $white    $mblue         $lblue
+  client.focused_inactive    $mblue      $black          $white    $dblue         $mblue
+  client.unfocused           $dblue      $black          $white    $black         $dblue
+  client.urgent              $crimson    $black          $white    $crimson       $crimson
