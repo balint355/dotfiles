@@ -219,7 +219,11 @@ exec udiskie
 font pango:Noto Sans 11
 
 # borders
+for_window [title="."] title_format "<b>%title</b>"
 default_border pixel 3
+default_floating_border pixel 3
+titlebar_border_thickness 2
+titlebar_padding 8 5
 smart_borders on
 
 # gaps
@@ -227,15 +231,15 @@ gaps inner 10
 smart_gaps on
 
 # colors
-set $lblue #cceeff
-set $mblue #7799aa
-set $dblue #224455
-set $black #000000DD
+set $fire #f25500
+set $lgrey #888888
+set $mgrey #555555
+set $dgrey #222222
 set $white #ffffff
 set $crimson #dc143c
 
-# class                      border      background      text      indicator      child_border
-  client.focused             $lblue      $black          $white    $mblue         $lblue
-  client.focused_inactive    $mblue      $black          $white    $dblue         $mblue
-  client.unfocused           $dblue      $black          $white    $black         $dblue
-  client.urgent              $crimson    $black          $white    $crimson       $crimson
+# class                    border      background      text      indicator      child_border
+  client.focused           $fire       $dgrey          $white    $lgrey         $fire
+  client.focused_inactive  $lgrey      $dgrey          $white    $mgrey         $lgrey
+  client.unfocused         $mgrey      $dgrey          $white    $dgrey         $mgrey
+  client.urgent            $crimson    $dgrey          $white    $crimson       $crimson
