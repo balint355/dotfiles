@@ -34,28 +34,27 @@ window#waybar {
 #pulseaudio,
 #battery,
 #clock {
-  padding: 0 6px;
-  margin: 0 8px;
+  padding: 0 15px;
   color: white;
   font-weight: bold;
 }
 
 @keyframes blink {
   to {
-    background: none;
+    color: white;
   }
 }
 
 #battery.charging {
-  background: green;
+  color: lawngreen;
 }
 
 #battery.warning:not(.charging) {
-  background: orangered;
+  color: orangered;
 }
 
 #battery.critical:not(.charging) {
-  background: red;
+  color: red;
   animation-name: blink;
   animation-duration: 2s;
   animation-timing-function: linear;
