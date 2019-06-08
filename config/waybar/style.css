@@ -29,6 +29,7 @@ window#waybar {
 }
 
 #window,
+#idle_inhibitor,
 #tray,
 #network,
 #pulseaudio,
@@ -37,6 +38,10 @@ window#waybar {
   padding: 0 15px;
   color: white;
   font-weight: bold;
+}
+
+#idle_inhibitor.deactivated {
+  color: darkgray;
 }
 
 @keyframes blink {
