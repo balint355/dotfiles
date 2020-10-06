@@ -1,0 +1,70 @@
+pkgname=tools-meta
+pkgver=1
+pkgrel=1
+pkgdesc='Meta package for installing some gnome packages'
+arch=(any)
+depends=(android-udev
+	dnsmasq
+	exfat-utils
+	firewalld
+	fish
+	git
+	gnu-free-fonts
+	gst-libav
+	gst-plugins-ugly
+	gstreamer-vaapi
+	hunspell-en_GB
+	hunspell-en_US
+	hunspell-es_any
+	hunspell-hu
+	hyphen-en
+	hyphen-es
+	hyphen-hu
+	libappindicator-gtk3
+	lrzip
+	nano
+    noto-fonts
+    noto-fonts-cjk
+    noto-fonts-emoji
+    ntfs-3g
+    p7zip
+    pacman-contrib
+    pkgfile
+    pulseaudio-modules-bt
+    python
+    python2
+    reflector
+    smartmontools
+    squashfs-tools
+    tex-gyre-fonts
+    texlive-bibtexextra
+    texlive-core
+    texlive-fontsextra
+    texlive-formatsextra
+    texlive-games
+    texlive-humanities
+    texlive-latexextra
+    texlive-latexindent-meta
+    texlive-music
+    texlive-pictures
+    texlive-pstricks
+    texlive-publishers
+    texlive-science
+    ttf-anonymous-pro
+    ttf-bitstream-vera
+    ttf-caladea
+    ttf-carlito
+    ttf-croscore
+    ttf-dejavu
+    ttf-droid
+    ttf-hack
+    ttf-ibm-plex
+    ttf-inconsolata
+    ttf-liberation
+    ttf-linux-libertine
+    ttf-roboto
+    ttf-ubuntu-font-family
+    unace
+    unrar
+    wget
+    yay)
