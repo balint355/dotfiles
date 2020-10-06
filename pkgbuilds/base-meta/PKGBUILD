@@ -1,5 +1,5 @@
 pkgname=base-meta
-pkgver=1
+pkgver=2
 pkgrel=1
 pkgdesc='Meta package for installing basic packages'
 arch=(any)
@@ -25,11 +25,11 @@ depends=(autoconf
 	make
 	man-db
 	man-pages
-	nano
 	pacman
 	patch
 	pkgconf
 	sed
 	sudo
 	texinfo
+	vi
 	which)
