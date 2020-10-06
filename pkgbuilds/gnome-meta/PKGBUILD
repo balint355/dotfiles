@@ -3,8 +3,6 @@ pkgver=3.38.0
 pkgrel=1
 pkgdesc='Meta package for installing some gnome packages'
 arch=(any)
-url='https://www.archlinux.org/'
-license=(GPL)
 depends=(baobab
 	cheese
 	eog
