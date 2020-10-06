@@ -52,7 +52,6 @@ depends=(baobab
 	gvfs-nfs
 	gvfs-smb
 	nautilus
-	networkmanager
 	orca
 	rygel
 	simple-scan
