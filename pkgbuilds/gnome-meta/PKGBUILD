@@ -5,6 +5,7 @@ pkgdesc='Meta package for installing some gnome packages'
 arch=(any)
 depends=(baobab
 	cheese
+	chrome-gnome-shell
 	eog
 	evince
 	file-roller
