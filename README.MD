@@ -1,17 +1,12 @@
 # dotfiles
 
-These are my personal dotfiles that I use on my desktop Linux systems.
+These are my personal config files and packages that I use on my desktop Linux systems.
 
 ## List of applications
 
 - fish
-- kitty
 - mpv
-- nvim
-- ranger
-- sway
-- waybar
-- zathura
+- nano
 
 ## Usage
 
