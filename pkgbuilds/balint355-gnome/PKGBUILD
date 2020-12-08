@@ -1,6 +1,6 @@
 pkgname=balint355-gnome
 pkgver=3.38.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Meta package for installing some gnome packages'
 arch=(any)
 depends=(baobab
@@ -26,7 +26,6 @@ depends=(baobab
 	gnome-logs
 	gnome-maps
 	gnome-menus
-	gnome-music
 	gnome-photos
 	gnome-remote-desktop
 	gnome-screenshot
