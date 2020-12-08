@@ -1,4 +1,4 @@
-pkgname=gnome-meta
+pkgname=balint355-gnome
 pkgver=3.38.0
 pkgrel=2
 pkgdesc='Meta package for installing some gnome packages'

@@ -1,4 +1,4 @@
-pkgname=base-meta
+pkgname=balint355-base
 pkgver=2
 pkgrel=1
 pkgdesc='Meta package for installing basic packages'
