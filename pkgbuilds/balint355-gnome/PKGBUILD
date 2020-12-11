@@ -28,6 +28,7 @@ depends=(baobab
 	gnome-remote-desktop
 	gnome-screenshot
 	gnome-shell
+	gnome-software
 	gnome-sound-recorder
 	gnome-system-monitor
 	gnome-terminal
