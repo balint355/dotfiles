@@ -1,0 +1,22 @@
+pkgname=balint355-apps
+pkgver=1
+pkgrel=1
+pkgdesc='Meta package for installing applications'
+arch=(any)
+depends=(beets
+	chromium
+	drawing
+	firefox
+	firefox-i18n-hu
+	gimp
+	jetbrains-toolbox
+	libreoffice-fresh
+	libreoffice-fresh-hu
+	lollypop
+	mpv
+	mpv-mpris
+	steam
+	syncthing
+	transmission-gtk
+	vim
+	visual-studio-code-bin)
