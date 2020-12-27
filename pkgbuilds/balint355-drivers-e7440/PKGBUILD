@@ -1,0 +1,13 @@
+pkgname=balint355-drivers-e7440
+pkgver=1
+pkgrel=1
+pkgdesc='Meta package for installing drivers for Dell Latitude E7440 laptop'
+arch=(any)
+depends=(intel-ucode
+    lib32-libva-intel-driver
+    lib32-vulkan-icd-loader
+    lib32-vulkan-intel
+    libva-intel-driver
+    vulkan-icd-loader
+    vulkan-intel
+    vulkan-tools)

@@ -3,7 +3,7 @@
 # make packages and add them to repo
 for i in pkgbuilds/*
     cd $i
-    makepkg -src
+    makepkg -sc
     mv *.pkg.* ../../repo
     cd ../..
 end
