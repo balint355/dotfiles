@@ -1,0 +1,18 @@
+pkgname=balint355-drivers-zen-amdgpu
+pkgver=1
+pkgrel=1
+pkgdesc='Meta package for installing drivers for Zen + AMDGPU systems'
+arch=(any)
+depends=(amd-ucode
+    clinfo
+    lib32-libva-mesa-driver
+    lib32-ocl-icd
+    lib32-opencl-mesa
+    lib32-vulkan-icd-loader
+    lib32-vulkan-radeon
+    libva-mesa-driver
+    ocl-icd
+    opencl-mesa
+    vulkan-icd-loader
+    vulkan-radeon
+    vulkan-tools)
