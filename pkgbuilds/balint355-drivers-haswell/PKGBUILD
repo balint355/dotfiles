@@ -1,8 +1,9 @@
-pkgname=balint355-drivers-e7440
+pkgname=balint355-drivers-haswell
 pkgver=1
 pkgrel=1
-pkgdesc='Meta package for installing drivers for Dell Latitude E7440 laptop'
+pkgdesc='Meta package for installing drivers for Haswell laptop'
 arch=(any)
+replaces=(balint355-drivers-e7440)
 depends=(intel-ucode
     lib32-libva-intel-driver
     lib32-vulkan-icd-loader
