@@ -16,7 +16,12 @@ Server = https://balint355.github.io/dotfiles/repo
 
 Install the packages using pacman.
 
-To add a new package to the repo or update an existing one, create or edit a PKGFILE in the appropriate folder in `pkgbuilds`, then run the fish shell script `setup-pkgs.fish`. This will build the package and move it to the repository.
+To add, update or remove packages to/from the repo, create or edit a PKGFILE in the appropriate folder in `pkgbuilds`, then run the fish shell script `update-repo.fish` with the appropriate arguments. Valid options are:
+
+- `add <pkgname>`: add new package to repo
+- `remove <pkgname>`: remove package from repo
+- `update <pkgname>`: update package in repo
+- `all`: rebuild all packages in repo
 
 ### Config files
 
