@@ -1,6 +1,8 @@
 #!/usr/bin/env fish
 
-# setup configs in config directory
+set etc_dir /etc
+
+# get config directory
 if set -q XDG_CONFIG_HOME
     set config_dir $XDG_CONFIG_HOME
 else
@@ -8,24 +10,24 @@ else
 end
 
 function copy_config
-    for i in config/$argv[1]/*
-        set name (basename $i)
-        set dir $config_dir/$name
-
-        if test ! -e $dir
-            mkdir $dir
-        end
-
-        cp $i/* $dir
+    if test ! -e $argv[2]
+        mkdir $argv[2]
+    end
+    
+    for i in $argv[1]/$argv[3]/*
+        cp -r $i $argv[2]
     end
 end
 
-copy_config base
+copy_config etc $etc_dir base
+copy_config config $config_dir base
 
 if test (count $argv) -ge 1
-    if test -e config/$argv[1]
-        copy_config $argv[1]
-    else
-        echo "WARNING: config folder $argv[1] doesn't exist"
+    if test -d etc/$argv[1]
+        copy_config etc $etc_dir $argv[1]
+    end
+    
+    if test -d config/$argv[1]
+        copy_config config $config_dir $argv[1]
     end
 end
