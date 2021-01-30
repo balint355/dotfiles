@@ -1,5 +1,5 @@
 pkgname=balint355-base
-pkgver=3
+pkgver=4
 pkgrel=1
 pkgdesc='Meta package for installing basic packages'
 arch=(any)
@@ -19,7 +19,7 @@ depends=(autoconf
     groff
     gzip
     libtool
-    linux-lts
+    linux
     linux-firmware
     m4
     make
