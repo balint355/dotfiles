@@ -1,0 +1,1 @@
+KERNEL=="0000:0b:00.3", SUBSYSTEM=="pci", DRIVER=="xhci_hcd", ATTR{power/wakeup}="disabled"
