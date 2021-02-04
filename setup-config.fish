@@ -11,11 +11,11 @@ end
 
 function copy_config
     if test ! -e $argv[2]
-        mkdir $argv[2]
+        sudo mkdir $argv[2]
     end
     
     for i in $argv[1]/$argv[3]/*
-        cp -r $i $argv[2]
+        sudo cp -r $i $argv[2]
     end
 end
 
