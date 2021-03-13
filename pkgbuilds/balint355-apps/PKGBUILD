@@ -1,5 +1,5 @@
 pkgname=balint355-apps
-pkgver=2
+pkgver=3
 pkgrel=1
 pkgdesc='Meta package for installing applications'
 arch=(any)
@@ -18,5 +18,6 @@ depends=(beets
     mpv-mpris
     steam
     syncthing
+    tmux
     transmission-gtk
     vim)
