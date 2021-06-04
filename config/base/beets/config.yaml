@@ -2,3 +2,4 @@ directory: ~/Zenék
 paths:
   default: $albumartist - $album/$track $title
   albumtype:soundtrack: $album/$track $title
+plugins: fetchart
