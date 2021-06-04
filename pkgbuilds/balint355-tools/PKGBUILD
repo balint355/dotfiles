@@ -1,5 +1,5 @@
 pkgname=balint355-tools
-pkgver=9
+pkgver=10
 pkgrel=1
 pkgdesc='Meta package for installing some system tools'
 arch=(any)
@@ -24,10 +24,13 @@ depends=(android-udev
     hyphen-en
     hyphen-es
     hyphen-hu
+    lib32-libpulse
     libappindicator-gtk3
     lrzip
+    minted
     nano
     networkmanager
+    networkmanager-openconnect
     noto-fonts
     noto-fonts-cjk
     noto-fonts-emoji
@@ -37,6 +40,7 @@ depends=(android-udev
     p7zip
     pacman-contrib
     pkgfile
+    plymouth
     python
     python2
     reflector
@@ -74,4 +78,6 @@ depends=(android-udev
     unace
     unrar
     wget
+    wine
+    winetricks
     yay)
