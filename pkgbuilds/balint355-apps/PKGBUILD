@@ -1,5 +1,5 @@
 pkgname=balint355-apps
-pkgver=3
+pkgver=4
 pkgrel=1
 pkgdesc='Meta package for installing applications'
 arch=(any)
@@ -13,7 +13,6 @@ depends=(beets
     jetbrains-toolbox
     libreoffice-fresh
     libreoffice-fresh-hu
-    lollypop
     mpv
     mpv-mpris
     steam
