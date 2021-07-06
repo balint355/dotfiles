@@ -1,5 +1,5 @@
 pkgname=balint355-tools
-pkgver=10
+pkgver=11
 pkgrel=1
 pkgdesc='Meta package for installing some system tools'
 arch=(any)
