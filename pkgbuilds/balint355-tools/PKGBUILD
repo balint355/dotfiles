@@ -45,6 +45,7 @@ depends=(android-udev
     python2
     reflector
     smartmontools
+    snapper
     squashfs-tools
     tex-gyre-fonts
     texlive-bibtexextra
